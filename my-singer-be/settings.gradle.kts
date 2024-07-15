@@ -24,8 +24,6 @@ plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.5.0"
 }
 
-// Включает вот такую конструкцию в gradle.build.kts
-//implementation(projects.m2l6Gradle.sub1.ssub1)
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 include(":my-singer-tmp")

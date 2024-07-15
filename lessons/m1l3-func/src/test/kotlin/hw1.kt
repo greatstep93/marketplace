@@ -1,4 +1,4 @@
-import kotlin.test.Ignore
+import junit.framework.TestCase.assertEquals
 import kotlin.test.Test
 
 /*
@@ -11,7 +11,6 @@ import kotlin.test.Test
 class HomeWork1Test {
 
     @Test
-    @Ignore
     fun mapListToNamesTest() {
         val input = listOf(
             mapOf(
@@ -32,7 +31,10 @@ class HomeWork1Test {
             "Петька",
             "Королев Сергей",
         )
-//        val res = mapListToNames(input)
-//        assertEquals(expected, res)
+        val mapListToNames = fun(input: List<Map<String, String>>): List<String> {
+            return input.map { "${it["last"].orEmpty()} ${it["first"].orEmpty()} ${it["middle"].orEmpty()}".trim() }
+        }
+        val res = mapListToNames(input)
+        assertEquals(expected, res)
     }
 }
