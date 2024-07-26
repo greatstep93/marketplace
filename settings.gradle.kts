@@ -1,6 +1,6 @@
 pluginManagement {
-    val kotlinVersion: String by settings
     plugins {
+        val kotlinVersion: String by settings
         kotlin("jvm") version kotlinVersion
     }
 }
@@ -10,4 +10,5 @@ plugins {
 }
 rootProject.name = "marketplace"
 
-include("m1l1-first")
+includeBuild("lessons")
+includeBuild("my-singer-be")
