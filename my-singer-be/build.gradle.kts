@@ -14,3 +14,7 @@ subprojects {
         mavenCentral()
     }
 }
+
+task("check") {
+    dependsOn(rootProject.tasks.getByName("init"))
+}

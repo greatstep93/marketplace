@@ -14,3 +14,7 @@ subprojects {
     version = rootProject.version
 }
 
+task("check") {
+    dependsOn(rootProject.tasks.getByName("init"))
+}
+
