@@ -30,14 +30,15 @@
 
 1. Stage
     - UUID (String)
-    - Title
+    - Title (String)
     - Status (StageStatus)
     - Type (StageType)
     - Players (User[])
     - Judges (User[])
     - CompetitionUUID (UUID)
-    - DateStart
-    - DateEnd
+    - DateStart (DateTime)
+    - DateEnd (DateTime)
+    - WinnersCount (Integer)
 
 ## Функции (эндпониты)
 
@@ -98,6 +99,13 @@
 
 1. CRUDS (create, read, update, delete, search) для работ для конкурса (Track)
 
+## Описание сущности Pair (Пары этапа play-off)
 
+1. Pair
+   - UserNickName1 (String)
+   - UserNickName2 (String)
+   - StageUUID (String)
 
+## Функции (эндпониты)
+1. CRUDS (create, read, update, delete, search) для работ для конкурса (Track)
 
