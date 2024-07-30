@@ -1,1 +1,2 @@
-![my_singer_db](my_singer.png)
+# СХЕМА БАЗЫ ДАННЫХ
+![my_singer_db](my_singer_db.png)

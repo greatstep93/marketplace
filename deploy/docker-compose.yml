@@ -4,11 +4,16 @@
 # Fluent Bit - служба сбора логов
 # Envoy - прокси
 # Keycloak - сервер идентификации
+# Minio - S3 хранилище файлов
+# smtp4dev - SMTP сервер для тестирования отправки email уведомлений
+# postgres - база данных для хранения сущностей бэкенда
+# kafka/zookeeper - брокер сообщений для связи между основным приложением и сервисом по отправке email уведомлений
 
 # Адреса:
 # Приложение доступно по http://localhost:8090 (envoy прокси)
 # Панели мониторинга http://localhost:5601 (opensearch dashboards, kibana)
 # Управление пользователями http://localhost:8081 (keycloak)
+# nexus-docker.greatstep.ru - свой репозиторий docker образов для сохранения и фиксации версий образов.
 
 #version: '3'
 services:
