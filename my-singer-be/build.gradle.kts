@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "ru.otus.otuskotlin.marketplace"
-version = "0.0.1"
+version = "1.0.0"
 
 subprojects {
     group = rootProject.group
@@ -13,4 +13,8 @@ subprojects {
     repositories {
         mavenCentral()
     }
+}
+
+task("check") {
+    dependsOn(rootProject.tasks.getByName("init"))
 }
